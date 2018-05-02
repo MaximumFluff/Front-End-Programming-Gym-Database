@@ -40,7 +40,6 @@ class Customers extends Component {
       email: this.state.email,
       phone: this.state.phone
     }
-    console.log(newCustomer)
     fetch("https://customerrest.herokuapp.com/api/customers", {
       method: "POST",
       headers: {

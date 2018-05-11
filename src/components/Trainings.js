@@ -51,6 +51,10 @@ class Trainings extends Component {
     fetch('https://customerrest.herokuapp.com/gettrainings')
       .then(res => res.json())
       .then(resJson => {
+        for (let i = 0; i < resJson.length; i++) {
+          let date = resJson[i].date
+          resJson[i].date = String(new Date(date))
+        }
         this.setState({
           trainings: resJson
         })

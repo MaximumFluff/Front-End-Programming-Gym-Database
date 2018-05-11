@@ -52,7 +52,7 @@ export default class Calender extends Component {
   render() {
     let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
     return (
-      <div style={{ height: 800 }}>
+      <div style={{ height: 1000 }}>
         <BigCalendar
           events={this.state.dates}
           views={allViews}

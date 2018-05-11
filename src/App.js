@@ -22,7 +22,7 @@ class App extends Component {
               <Link to="/calender" style={{ marginRight: 30 }} className="badge badge-secondary">Calender</Link>{' '}
             </div>
             <Switch>
-              <Route exact path="/" render={() => <h2>Welcome to our internal customer database! Please don't give this information out freely</h2>} />
+              <Route exact path="/" render={() =><div> <h2>Welcome to our internal customer database!</h2><br/><p>At Gold's gym were are dedicated to getting people in a stupid short amount of time! <br/> Please dont share this internal data freely, doing so will make you liable to be subjected to legal action</p><img src={require('./barbell.png')} alt="Barbell logo" height={400} width={400} style={{paddingTop: 34}}/></div>} />
               <Route path="/customers" component={Customers} />
               <Route path="/trainings" component={Trainings} />
               <Route path="/calender" component={Calender} />

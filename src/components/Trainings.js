@@ -1,10 +1,9 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from 'react';
+import Skylight from "react-skylight";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Skylight from "react-skylight";
-import "react-table/react-table.css";
-import { toast, ToastContainer } from "react-toastify"
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 class Trainings extends Component {
@@ -158,7 +157,7 @@ class Trainings extends Component {
                 },
                 {
                   Header: "Date",
-                  accessor: "date"
+                  accessor: "date",
                 },
                 {
                   Header: "First Name",

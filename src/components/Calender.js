@@ -59,6 +59,7 @@ export default class Calender extends Component {
           startAccessor="start"
           endAccessor="end"
           step={30}
+          defaultDate={new Date()}
         />
       </div>
     );
